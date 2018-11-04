@@ -1,11 +1,11 @@
 console.log("the app is running!");
 
-var app = {
+const app = {
 	title: 'Indecition',
 	subtitle: 'react app'
 
 };
-var template =(
+const template =(
 	<div>
 		<h1>{app.title}</h1>
 		{app.subtitle && <p>subtitle: {app.subtitle}</p>}
@@ -16,11 +16,11 @@ var template =(
 		</ol>
 	</div>
 	);
-var templateTwo = (
+const templateTwo = (
 	<div>
 		<h1>Ayoub Abed</h1>
 	</div>
 	);
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);
