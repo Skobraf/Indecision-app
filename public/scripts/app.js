@@ -1,44 +1,49 @@
-"use strict";
+'use strict';
 
 console.log("the app is running!");
 
+var app = {
+	title: 'Indecition',
+	subtitle: 'react app'
+
+};
 var template = React.createElement(
-	"div",
+	'div',
 	null,
 	React.createElement(
-		"h1",
+		'h1',
 		null,
-		"Ayoub"
+		app.title + "" + app.subtitle
 	),
 	React.createElement(
-		"p",
+		'p',
 		null,
-		"this is some info"
+		'this is some info'
 	),
 	React.createElement(
-		"ol",
+		'ol',
 		null,
 		React.createElement(
-			"li",
+			'li',
 			null,
-			"Item one"
+			'Item one'
 		),
 		React.createElement(
-			"li",
+			'li',
 			null,
-			"Item two"
+			'Item two'
 		)
 	)
 );
 var templateTwo = React.createElement(
-	"div",
+	'div',
 	null,
 	React.createElement(
-		"h1",
+		'h1',
 		null,
-		"Ayoub Abed"
+		'Ayoub Abed'
 	)
 );
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot);

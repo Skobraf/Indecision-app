@@ -1,9 +1,15 @@
 console.log("the app is running!");
 
+var app = {
+	title: 'Indecition',
+	subtitle: 'react app'
+
+};
 var template =(
 	<div>
-		<h1>Ayoub</h1>
-		<p>this is some info</p>
+		<h1>{app.title}</h1>
+		{app.subtitle && <p>subtitle: {app.subtitle}</p>}
+		<p>{app.options.length > 0 ? "here are some options" : 'no options'}</p>
 		<ol>
 			<li>Item one</li>
 			<li>Item two</li>
@@ -17,4 +23,4 @@ var templateTwo = (
 	);
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot);
