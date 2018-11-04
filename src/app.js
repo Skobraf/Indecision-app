@@ -1,6 +1,20 @@
 console.log("the app is running!");
 
-var template = <p>This is JSX</p>;
-var appRoot = Document.getElementById('app');
+var template =(
+	<div>
+		<h1>Ayoub</h1>
+		<p>this is some info</p>
+		<ol>
+			<li>Item one</li>
+			<li>Item two</li>
+		</ol>
+	</div>
+	);
+var templateTwo = (
+	<div>
+		<h1>Ayoub Abed</h1>
+	</div>
+	);
+var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
