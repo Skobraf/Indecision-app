@@ -24,7 +24,8 @@ const onFormSubmit = (e) => {
 
 const onMakeDecision = () => {
 	const randomNum = Math.floor(Math.random * app.options.length);
-	alert(app.options[randomNum]);
+	const option = app.options[randomNum];
+	alert(option);
 }
 
 const appRoot = document.getElementById('app');
