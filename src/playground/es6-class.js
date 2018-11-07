@@ -10,7 +10,7 @@ class Person {
 	}
 }
 
-class Traveler {
+class Traveler extends Person {
 	constructor(homeLocation) {
 		super(name,age);
 		this.homeLocation = homeLocation;
